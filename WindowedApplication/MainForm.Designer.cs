@@ -149,7 +149,6 @@ namespace WindowedApplication
             this.Controls.Add(this.errors);
             this.Controls.Add(this.status);
             this.Controls.Add(this.strip);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Scouting Server";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
