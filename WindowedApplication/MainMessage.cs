@@ -10,7 +10,7 @@ namespace WindowedApplication
     /// <summary>
     /// Scouting message used in 2024
     /// </summary>
-    public class Message2022 : ScoutingMessageBase
+    public class MainMessage : ScoutingMessageBase
     {
         [ScoutingProperty(0, "teamNumber")]
         public string TeamNumber { get; set; }
@@ -18,7 +18,7 @@ namespace WindowedApplication
         [ScoutingProperty(1, "allianceColor")]
         public string AllianceColour { get; set; }
 
-        [ScoutingProperty(2, "matchNumber")]
+        [ScoutingProperty(2, "matchNumber")] 
         public string MatchNumber { get; set; }
 
         [ScoutingProperty(3, "scoutName")]

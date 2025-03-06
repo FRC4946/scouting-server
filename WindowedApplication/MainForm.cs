@@ -35,7 +35,7 @@ namespace WindowedApplication
         public MainForm()
         {
             InitializeComponent();
-        }
+        } 
 
         private void strip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
@@ -43,6 +43,15 @@ namespace WindowedApplication
             {
                 // run button clicked
                 run_Clicked(e.ClickedItem);
+            }
+            if (e.ClickedItem.Name == "message")
+            {
+                if (run.Text == "RUN")
+                {
+            CSVManager.MainMess = !CSVManager.MainMess; // Correct instance access
+            e.ClickedItem.Text = CSVManager.MainMess ? "MAIN" : "PIT";                    
+             strip.Refresh();
+                }
             }
         }
 
