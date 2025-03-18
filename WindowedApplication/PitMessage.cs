@@ -13,27 +13,30 @@ namespace WindowedApplication
     public class PitMessage : ScoutingMessageBase
     {
         [ScoutingProperty(0, "GroundIntake")]
-        public string TeamNumber { get; set; }
+        public string ground { get; set; }
 
         [ScoutingProperty(1, "Drivetrain")]
-        public string AllianceColour { get; set; }
+        public string drivetrain { get; set; }
 
         [ScoutingProperty(2, "Weight")]
-        public string MatchNumber { get; set; }
+        public string weight { get; set; }
 
         [ScoutingProperty(3, "Height")]
-        public string ScoutName { get; set; }
+        public string height { get; set; }
 
         [ScoutingProperty(4, "ExtraNotes")]
-        public string disabled { get; set; }
+        public string notes { get; set; }
 
         [ScoutingProperty(5, "TeamNumber")]
-        public string autoL1 { get; set; }
+        public string teamnum { get; set; }
 
         [ScoutingProperty(6, "Algae")]
-        public string autoL2 { get; set; }
+        public string algae { get; set; }
 
         [ScoutingProperty(7, "Coral")]
-        public string autoL3 { get; set; }
+        public string coral { get; set; }
+
+        [ScoutingProperty(7, "Climbable")]
+        public string climb { get; set; }
     }
 }
