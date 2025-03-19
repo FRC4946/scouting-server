@@ -36,7 +36,7 @@ namespace WindowedApplication
         [ScoutingProperty(7, "Coral")]
         public string coral { get; set; }
 
-        [ScoutingProperty(7, "Climbable")]
+        [ScoutingProperty(8, "Climb")]
         public string climb { get; set; }
     }
 }
