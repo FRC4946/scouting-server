@@ -48,9 +48,10 @@ namespace WindowedApplication
             {
                 if (run.Text == "RUN")
                 {
-            CSVManager.MainMess = !CSVManager.MainMess; // Correct instance access
-            e.ClickedItem.Text = CSVManager.MainMess ? "MAIN" : "PIT";                    
-             strip.Refresh();
+            CSVManager.MainMess = !CSVManager.MainMess;
+            String swapto = CSVManager.MainMess ? "PIT" : "MAIN";
+            e.ClickedItem.Text = "SWAP TO: " + swapto;                    
+            strip.Refresh();
                 }
             }
         }

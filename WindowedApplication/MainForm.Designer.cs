@@ -82,7 +82,8 @@
             // message
             this.message.Name = "message";
             this.message.Size = new System.Drawing.Size(80, 24);
-            this.message.Text = "MAIN";
+            this.message.Text = "SWAP TO: PIT";
+
 
             // refreshTimer
             this.refreshTimer.Interval = 2000;

@@ -36,7 +36,7 @@ namespace WindowedApplication
             {
                 _Log = new CSVScoutingLog<PitMessage>(path);
             }
-
+            
             var sep = ".";
             var index = path.LastIndexOf(sep);
             _DesiredName = index > -1 ? path.Substring(0, index) : path;
