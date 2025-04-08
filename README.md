@@ -10,11 +10,10 @@ Visual Studio Community 2022 <br/>
 A completed scouting form for the scouting app (just saves time) <br/> 
 <br/> 
 What to do: <br/> 
-Open up the app in Visual Studio as a folder <br/> 
+Open up the app in Visual Studio as a solution (.sln)<br/> 
 Locate both MainMessage.cs and PitMessage.cs <br/> 
 Edit the data from both respective files (swap out the names and add/remove any variables from the array to match your scouting form) <br/> 
 Note: The order of the data in the message arrays must be the EXACT SAME as your scouting form, or data will be mismatched/lost <br/> 
-Re-open the folder as a project, you will have to select the .sln file inside the folder <br/> 
 Run the entire app from MainForm.cs <br/> 
 If there are any errors, try to fix them to the best of your ability <br/> 
 Once that copy of the server works, simply push it as a branch that's named the year of the server (i.e the 2026 server will just be a branch called 2026 <br/> 
@@ -30,9 +29,8 @@ Once the server is running and the tablets are ready, simply hit the run button 
 Note: Under connections, however many rows are being filled with text indicate the number of connections. <br/> 
  <br/> 
  Everything works, but it's not an app I can pass around. How do I make it one? <br/> 
- This way is a bit scuffed, but stick with me here <br/> 
- Go into the files of the app on file explorer, and locate the debug folder (found in bin) for both the bluetooth and windowed applications <br/> 
- Create a new folder, and copy and paste the windowed application files into it first <br/> 
- Then, copy and paste the bluetooth debug files into the same folder. When asked about duplicate files, choose to skip the files rather than replace them <br/> 
- Once all this is done, I'd advise testing the exe file before compiling it into a zip file. If it works, congratulations! If it didn't, try again, we can do this indefinitely <br/> 
-Last Updated: March 19th - 2025
+ First, change the debug dropdown beside the CPU options and below the build button at the top to "Release." This makes Visual Studio build the app as normal, without the debugging functions.<br/> 
+ Once you've done that, run WindowedApplication without debugging (the hollow play button) to both test and ensure it's running correctly<br/> 
+ After that, right click on WindowedApplication in Solution Explorer, click "Open folder in File Explorer," open the "bin" folder, open the "Release" and then the "net5.0-windows" folder.<br/> 
+ After ensuring there is data within the folder and the exe file runs correctly, compress the "net5.0-windows" folder to a zip file and you have your server as a transferable file.<br/> 
+Last Updated: April  8th - 2025
