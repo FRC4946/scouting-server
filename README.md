@@ -1,7 +1,7 @@
 # scouting-server
 Scouting server app for Alpha Dogs
 
-Hello there traveler! <br/> 
+Hello there traveler! <br/>  
 Here's what to do with the server: <br/> 
  <br/> 
 Prerequisites:  <br/> 

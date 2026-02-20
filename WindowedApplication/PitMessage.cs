@@ -15,28 +15,38 @@ namespace WindowedApplication
         [ScoutingProperty(0, "GroundIntake")]
         public string ground { get; set; }
 
-        [ScoutingProperty(1, "Drivetrain")]
-        public string drivetrain { get; set; }
+        [ScoutingProperty(1, "Swerve")]
+        public string swerve { get; set; }
 
-        [ScoutingProperty(2, "Weight")]
+        [ScoutingProperty(2, "Turret")]
+        public string turret { get; set; }
+
+        [ScoutingProperty(3, "Weight")]
         public string weight { get; set; }
 
-        [ScoutingProperty(3, "Height")]
-        public string height { get; set; }
+        [ScoutingProperty(4, "Length")]
+        public string length { get; set; }
 
-        [ScoutingProperty(4, "ExtraNotes")]
-        public string notes { get; set; }
+        [ScoutingProperty(5, "Width")]
+        public string width { get; set; }
 
-        [ScoutingProperty(5, "TeamNumber")]
-        public string teamnum { get; set; }
+        [ScoutingProperty(6, "Balls")]
+        public string balls { get; set; }
 
-        [ScoutingProperty(6, "Algae")]
-        public string algae { get; set; }
+        [ScoutingProperty(7, "ExtraNotes")]
+        public string extraNotesInput { get; set; }
 
-        [ScoutingProperty(7, "Coral")]
-        public string coral { get; set; }
+        [ScoutingProperty(8, "TeamNumber")]
+        public string teamNumberInput { get; set; }
 
-        [ScoutingProperty(8, "Climb")]
+        [ScoutingProperty(9, "bump")]
+        public string bump { get; set; }
+
+        [ScoutingProperty(10, "trench")]
+        public string trench { get; set; }
+
+        [ScoutingProperty(11, "climb")]
         public string climb { get; set; }
+
     }
 }

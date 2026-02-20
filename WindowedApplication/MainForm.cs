@@ -1,13 +1,6 @@
 ﻿using BluetoothLibrary;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowedApplication
@@ -35,7 +28,7 @@ namespace WindowedApplication
         public MainForm()
         {
             InitializeComponent();
-        } 
+        }
 
         private void strip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
@@ -48,10 +41,10 @@ namespace WindowedApplication
             {
                 if (run.Text == "RUN")
                 {
-            CSVManager.MainMess = !CSVManager.MainMess;
-            String swapto = CSVManager.MainMess ? "PIT" : "MAIN";
-            e.ClickedItem.Text = "SWAP TO: " + swapto;                    
-            strip.Refresh();
+                    CSVManager.MainMess = !CSVManager.MainMess;
+                    String swapto = CSVManager.MainMess ? "PIT" : "MAIN";
+                    e.ClickedItem.Text = "SWAP TO: " + swapto;
+                    strip.Refresh();
                 }
             }
         }
@@ -299,10 +292,10 @@ namespace WindowedApplication
                     d.Filter = "Comma Separated Values (*.csv)|*.csv";
                     if (d.ShowDialog() == DialogResult.OK)
                     {
-                        _Start(d.FileName);   
+                        _Start(d.FileName);
                     }
                 }
-            } 
+            }
             else
             {
                 _Stop();
