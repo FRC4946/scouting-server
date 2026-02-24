@@ -24,52 +24,25 @@ namespace WindowedApplication
         [ScoutingProperty(3, "scoutName")]
         public string ScoutName { get; set; }
 
-        [ScoutingProperty(4, "disabled")]
+        [ScoutingProperty(4, "Shoot %")]
         public string disabled { get; set; }
 
-        [ScoutingProperty(5, "autoL1")]
+        [ScoutingProperty(5, "Pass %")]
         public string autoL1 { get; set; }
 
-        [ScoutingProperty(6, "autoL2")]
+        [ScoutingProperty(6, "Defend %")]
         public string autoL2 { get; set; }
 
-        [ScoutingProperty(7, "autoL3")]
+        [ScoutingProperty(7, "Collect %")]
         public string autoL3 { get; set; }
 
-        [ScoutingProperty(8, "autoL4")]
+        [ScoutingProperty(8, "Disabled %")]
         public string autoL4 { get; set; }
 
-        [ScoutingProperty(9, "autoProcessor")]
+        [ScoutingProperty(9, "Climb %")]
         public string autoProcessor { get; set; }
 
-        [ScoutingProperty(10, "autoNet")]
-        public string autoNet { get; set; }
-
-        [ScoutingProperty(11, "teleopL1")]
-        public string teleopL1 { get; set; }
-
-        [ScoutingProperty(12, "teleopL2")]
-        public string teleopL2 { get; set; }
-
-        [ScoutingProperty(13, "teleopL3")]
-        public string teleopL3 { get; set; }
-
-        [ScoutingProperty(14, "teleopL4")]
-        public string teleopL4 { get; set; }
-
-        [ScoutingProperty(15, "teleopProcessor")]
-        public string teleopProcessor { get; set; }
-
-        [ScoutingProperty(16, "teleopNet")]
-        public string teleopNet { get; set; }
-
-        [ScoutingProperty(17, "defensePercent")]
-        public string defensePercent { get; set; }
-
-        [ScoutingProperty(18, "climbSpeed")]
-        public string climbSpeed { get; set; }
-
-        [ScoutingProperty(19, "notes")]
+        [ScoutingProperty(10, "notes")]
         public string notes { get; set; }
 
     }
