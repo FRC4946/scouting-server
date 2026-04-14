@@ -33,10 +33,10 @@ namespace WindowedApplication
         [ScoutingProperty(6, "Balls")]
         public string balls { get; set; }
 
-        [ScoutingProperty(7, "ExtraNotes")]
+        [ScoutingProperty(7, "notes")] //LEAVE NAME ALONE
         public string extraNotesInput { get; set; }
 
-        [ScoutingProperty(8, "TeamNumber")]
+        [ScoutingProperty(8, "teamNumber")] //LEAVE NAME ALONE
         public string teamNumberInput { get; set; }
 
         [ScoutingProperty(9, "bump")]
@@ -48,5 +48,7 @@ namespace WindowedApplication
         [ScoutingProperty(11, "climb")]
         public string climb { get; set; }
 
+        [ScoutingProperty(12, "SDS")]
+        public string SDS { get; set; }
     }
 }

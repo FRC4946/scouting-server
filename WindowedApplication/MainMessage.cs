@@ -8,42 +8,44 @@ using System.Threading.Tasks;
 namespace WindowedApplication
 {
     /// <summary>
-    /// Scouting message used in 2024
+    /// Scouting message used in 2026
     /// </summary>
     public class MainMessage : ScoutingMessageBase
     {
-        [ScoutingProperty(0, "teamNumber")]
+        [ScoutingProperty(0, "matchNumber")] //LEAVE NAME ALONE
         public string TeamNumber { get; set; }
 
-        [ScoutingProperty(1, "allianceColor")]
+        [ScoutingProperty(1, "scoutName")]
         public string AllianceColour { get; set; }
 
-        [ScoutingProperty(2, "matchNumber")] 
-        public string MatchNumber { get; set; }
+        [ScoutingProperty(2, "teamNumA")]
+        public string TeamNumberA { get; set; }
 
-        [ScoutingProperty(3, "scoutName")]
-        public string ScoutName { get; set; }
+        [ScoutingProperty(3, "teamNumB")]
+        public string TeamNumberB { get; set; }
 
-        [ScoutingProperty(4, "Shoot %")]
-        public string disabled { get; set; }
+        [ScoutingProperty(4, "offenceA")]
+        public string OffenceA { get; set; }
 
-        [ScoutingProperty(5, "Pass %")]
-        public string autoL1 { get; set; }
+        [ScoutingProperty(4, "offenceB")]
+        public string OffenceB { get; set; }
 
-        [ScoutingProperty(6, "Defend %")]
-        public string autoL2 { get; set; }
+        [ScoutingProperty(4, "defenceA")]
+        public string DefenceA { get; set; }
 
-        [ScoutingProperty(7, "Collect %")]
-        public string autoL3 { get; set; }
+        [ScoutingProperty(4, "defenceB")]
+        public string DefenceB { get; set; }
 
-        [ScoutingProperty(8, "Disabled %")]
-        public string autoL4 { get; set; }
+        [ScoutingProperty(4, "driverA")]
+        public string DriverA { get; set; }
 
-        [ScoutingProperty(9, "Climb %")]
-        public string autoProcessor { get; set; }
+        [ScoutingProperty(4, "driverB")]
+        public string DriverB { get; set; }
 
-        [ScoutingProperty(10, "notes")]
-        public string notes { get; set; }
+        [ScoutingProperty(4, "notesA")]
+        public string NotesA { get; set; }
 
+        [ScoutingProperty(4, "notesB")]
+        public string NotesB { get; set; }
     }
 }
