@@ -27,25 +27,25 @@ namespace WindowedApplication
         [ScoutingProperty(4, "offenceA")]
         public string OffenceA { get; set; }
 
-        [ScoutingProperty(4, "offenceB")]
+        [ScoutingProperty(5, "offenceB")]
         public string OffenceB { get; set; }
 
-        [ScoutingProperty(4, "defenceA")]
+        [ScoutingProperty(6, "defenceA")]
         public string DefenceA { get; set; }
 
-        [ScoutingProperty(4, "defenceB")]
+        [ScoutingProperty(7, "defenceB")]
         public string DefenceB { get; set; }
 
-        [ScoutingProperty(4, "driverA")]
+        [ScoutingProperty(8, "driverA")]
         public string DriverA { get; set; }
 
-        [ScoutingProperty(4, "driverB")]
+        [ScoutingProperty(9, "driverB")]
         public string DriverB { get; set; }
 
-        [ScoutingProperty(4, "notesA")]
+        [ScoutingProperty(10, "notesA")]
         public string NotesA { get; set; }
 
-        [ScoutingProperty(4, "notesB")]
+        [ScoutingProperty(11, "notesB")]
         public string NotesB { get; set; }
     }
 }
